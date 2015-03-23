@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>daver2day's notes on Intro to Programming</title>
+        <link rel="stylesheet" href="stage1-style.css">
+        <meta charset="UTF-8">  
+</head>
+
+<body>
+    <div class="TOC">
+        <h1>Table of Contents</h1>
+        <ol>
+            <li><a href="#lesson.1">Lesson 1: Concepts of the Web</a>
+                <ul>
+                    <li><a href="#lesson.1.1">HTTP - How the Web works</a>
+                    <li><a href="#lesson.1.2">HTML</a>
+                    <li><a href="#lesson.1.3">Tags and Elements</a>
+                    <li><a href="#lesson.1.4">Computer are Stupid</a>
+                    <li><a href="#lesson.1.5">In-line vs Block Elements</a>
+                </ul>
+            </li>
+            <li><a href="#lesson.2">Lesson 2: Structure of HTML pages and the tools to create and inspect them</a>
+                <ul>
+                    <li><a href="#lesson.2.1">Browser DOM - Tree Structure</a>
+                    <li><a href="#lesson.2.2">Developer Tools</a>
+                    <li><a href="#lesson.2.3">So Many Boxes</a>
+                    <li><a href="#lesson.2.4">Style of HTML Pages</a>
+                    <li><a href="#lesson.2.5">CSS Style</a>
+                    <li><a href="#lesson.2.6">HTML page design tools</a>
+                    <li><a href="#lesson.2.7">Scratchpad</a>
+                    <li><a href="#lesson.2.8">Codepen</a>
+                    <li><a href="#lesson.2.9">Sublime Text</a>
+                    <li><a href="#lesson.2.10">HTML Code Validation</a>
+                </ul>
+            </li>
+            <li><a href="#lesson.3">Lesson 3: Using CSS code to improve Web page appearance and reduce coding errors</a>
+                <ul>
+                    <li><a href="#lesson.3.1">Using CSS code to improve Web page appearance while reducing errors</a>
+                    <li><a href="#lesson.3.2">CSS Code Validation</a>
+                </ul>
+            </li>
+        </ol>
+    </div>
+    
+    <h1>Web Development Important Concepts</h1>
+    <div class="lesson">
+        <h2 id="lesson.1">Lesson 1: Concepts of the Web</h2>
+        <div class="concept" id="lesson.1.1">
+            <div class="concept-title">
+                HTTP - How the web works
+            </div>
+            <div class="concept-description">
+                <p>
+                    The web consists of computers that talk to each other over the Internet. The computers talk to each other with a protocol called <em>http</em>.
+                    The end user's computer runs a <em>web browser</em> which is responsible for requesting documents from servers, which store them, and displaying the contents to the user.
+                    The user's computer sends a document request to the server using the <em>http</em> protocol.
+                    When the server receives the request, it looks for the document and returns it to the user also using the <em>http</em> protocol. A good example video of how this works can be found here:
+                    <a href="https://www.udacity.com/course/viewer#!/c-ud721/l-3508959201/e-48329854/m-48480496">This video explains the process</a>.
+                </p>
+            </div>
+        </div>
+
+        <div class="concept" id="lesson.1.2">
+            <div class="concept-title">
+                HTML
+            </div>
+            <div class="concept-description">
+                <p>
+                    The primary document type that makes up the web is called a HTML document.
+                    HTML stands for Hypertext Markup Language and is used to control the way the document is displayed to the user.
+                    The user's computer reads the document and displays it as described by the HTML code.
+                    The HTML document consists of content to be displayed as well as instructions on <em>how</em> to display the content.
+                    A good overview of HTML documents can be seen in <a href="https://www.udacity.com/course/viewer#!/c-ud721/l-3508959201/m-48724340">
+                    this video.</a>
+                </p>
+            </div>
+        </div>
+
+        
+        <div class="concept" id="lesson.1.3">
+            <div class="concept-title">
+                Tags and Elements
+            </div>
+            <div class="concept-description">    
+                <p>
+                    HTML documents consists of various parts, but they primarily consist of instructions on how to format the content,
+                    called <em>tags</em> and the content itself. This combination of tags and content is often referred to as an <em>Element</em>.
+                    A tag is used to tell the browser how to treat the contents as well as providing a means to link to external content not contained in the document itself.
+                    Tags and elements are explained in more detail in
+                    <a href="https://www.udacity.com/course/viewer#!/c-ud721/l-3508959201/m-48723444">this video</a>.
+                    Referring to external content is a powerful way to create interesting and dynamic pages that can display pictures, videos, or play <span>music</span>.
+                </p>
+            </div>
+         </div>
+
+        <div class="concept" id="lesson.1.4">
+            <div class="concept-title">
+                Computers are stupid
+            </div>
+            <div class="concept-description">
+                <p>
+                    Computers only follow instructions as provided to them. They interpret the instructions literally, so even very small mistakes in those instructions can cause unexpected behavior.
+                </p>
+            </div>
+        </div>
+
+        <div class="concept" id="lesson.1.5">
+            <div class="concept-title">
+                In-line vs Block Elements
+            </div>
+            <div class="concept-description">    
+                <p>
+                    HTML elements have two primary distinguishing characteristics that allow certain degrees of control.
+                    An <em>In-line</em> element is basic item that is usually rendered similar to ordinary text. A <em>Block</em> element,
+                    however, forms a sort of invisible block around the content such that it can be formatted in various ways.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="lesson">
+        <h2 id="lesson.2">Lesson 2: Structure of HTML pages and the tools to create and inspect them</h2> 
+        <div class="concept" id="lesson.2.1">
+            <div class="concept-title">
+                Browser DOM - Tree Structure
+            </div>
+            <div class="concept-description">
+                <p>
+                    Although we've seen that HTML pages are composed of a series of elements which, in turn, are composed of tags and content, there is a bigger picture to the overall structure of HTML Pages.
+                </p>
+                <p>
+                    When the browser processes the HTML page content, it translates it into a tree like structure. This tree like structure is controlled or defined by the DOM, or Document Object Model. This provides a consistent way for browsers to understand the structural and style components of the page.
+                 </p>
+            </div>
+        </div>
+            
+        <div class="concept" id="lesson.2.2">
+            <div class="concept-title">
+                Developer tools
+            </div>
+            <div class="concept-description">
+                <p>
+                    A very useful feature of modern browsers is provided by developer tools within the browser. The developer tools allow you to view the overall tree structure of the page in a tabbed view while also separating the style elements to make it easier to view the overall page design.
+                </p>
+            </div>
+        </div>
+
+        <div class="concept" id="lesson.2.3">
+            <div class="concept-title">
+                So many Boxes
+            </div>
+            <div class="concept-description">
+                <p>
+                    In order to bring the overall design of HTML pages into an easily manageable entity, they can be viewed, in a larger context, as a series of rectangular boxes. Doing this allows the page designer a great deal of flexibility in arranging the overall look of the page.
+               </p>
+            </div>
+        </div>
+
+        <div class="concept" id="lesson.2.4">
+            <div class="concept-title">
+                Style of HTML Pages
+            </div>
+            <div class="concept-description">
+                <p>
+                    Having a structure to our HTML page, it largely would look pretty bland unless we had a method to add character to the page design. The overall style of HTML pages is controlled by the CSS language.
+                </p>
+            </div>
+        </div>
+
+        <div class="concept" id="lesson.2.5">
+            <div class="concept-title">
+                CSS Style
+            </div>
+            <div class="concept-description">
+                <p>
+                    CSS provides features to control the visual styling of the page such as header sizes, colors, font types and sizes, border sizes, and box placement among many others. Besides setting style characteristics for HTML pages, CSS also provides for setting style parameters in a consistent manner across the entire page. This reduces the need to duplicate style parameters for each page element.
+                </p>
+            </div>
+        </div>
+
+        <div class="concept" id="lesson.2.6">
+            <div class="concept-title">
+                HTML page design tools
+            </div>
+            <div class="concept-description">
+                <p>    
+                    Various code creation tools are available to the page designer. Each offers different features ranging from very basic to more advanced.
+                </p>
+            </div>
+        </div>
+        
+        <div class="concept" id="lesson.2.7">
+            <div class="concept-title">
+                Scratchpad
+            </div>
+            <div class="concept-description">
+                <p>
+                    Scratchpad is a very simplistic code creation tool. It provides for immediate feedback on page rendering, but only supports the HTML and CSS languages and does not provide for page sharing. Scratchpad is very good for beginners to experiment with HTML and CSS concepts.
+                </p>
+            </div>
+        </div>
+
+        <div class="concept" id="lesson.2.8">
+            <div class="concept-title">
+                Codepen
+            </div>
+            <div class="concept-description">
+                <p>
+                    Codepen is a step up from Scratchpad as it offers the addition of Java-script support, but at the cost of slightly slower page rendering feedback. It also provides support for page sharing.
+                </p>
+            </div>
+        </div>
+
+        <div class="concept" id="lesson.2.9">
+            <div class="concept-title">
+                Sublime Text
+            </div>
+            <div class="concept-description">
+                 <p>
+                     Sublime Text is a multi-featured text editor tool that supports many page design languages, but is more difficult to learn and use, but offers very advanced design capabilities. Page rendering is done only on page refresh and sharing is not possible with Sublime. It is geared towards the more advanced developer.
+                </p>
+            </div>
+        </div>
+        <div class="concept" id="lesson.2.10">
+            <div class="concept-title">
+                HTML Code Validation
+            </div>
+            <div class="concept-description">
+                 <p>
+                     Ensuring that Web pages can be properly displayed in the majority of browsers
+                     is important to enable the widest possible audience to view and interact
+                     with the page. However, HTML page code can get very complicated and hard for
+                     for the web page developer to catch all the possible errors. While the browser
+                     developer tools are very helpful, another tool can be used to analyze and display
+                     coding mistakes. One such tool is the <em>W3C</em> Markup Validation Service found here: <a href=http://validator.w3.org/#validate_by_input>W3C Markup Validation Service</a>. In addition to finding HTML coding errors, this service also provides suggestion on how to write code to be compatible with a very large number of browsers in use.
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="lesson">
+        <h2 id="lesson.3">Lesson 3: Using CSS code to improve Web page appearance and reduce coding errors</h2>
+        <div class="concept" id="lesson.3.1">
+            <div class="concept-title">
+                Using CSS code to improve Web page appearance while reducing errors.
+            </div>
+            <div class="concept-description">
+                <p>
+                    While it is useful to think of HTML pages as a collection of boxes, there often are so many pieces to a page that trying to position all of them can be tedious. In addition, all those <em>boxes</em> contain content and both the boxes and content need to look good too. If the Web page developer treated each box and every piece of content individually, while trying to adjust the visual attributes, it would quickly become a nightmare to get a consistent look while also avoiding errors.
+                </p>
+                <p>
+                    A great way to get this consistent look while avoiding errors, would be to use the CSS language. CSS stands for Cascading Style Sheets. Cascading refers to the ability to allow for style properties to be inherited from other properties which reduces the chance of creating an inconsistent look.
+                </p>
+                <p>
+                    While CSS instructions can be contained within the HTML page header, it is often a much better idea to keep the CSS code in a separate file. This CSS file is known as a CSS style sheet. Placing the CSS code in a separate file allows it to be kept separate from the HTML code, but also allows for better reuse across multiple web pages. This reduces the likelihood of errors sneaking into the code.
+                </p>
+                <p>
+                    Another very significant benefit to using CSS code, is that provides a method to reduce the repetition of code entries. By using CSS, visual attributes can be set and applied once rather than entering them again each time they are needed. This reduces code complexity since attributes only need to be entered once, but also reduces the chances for making typo errors or missing attributes on some items.
+                </p>
+            </div>
+        </div>
+        <div class="concept" id="lesson.3.2">
+            <div class="concept-title">
+                CSS Code Validation
+            </div>
+            <div class="concept-description">
+                <p>
+                    As discussed preciously, it is important to have Web pages display properly in as many browsers as possible. In addition to the <em>W3C</em> Markup Validation Service mentioned above, there is a corresponding service to validate the CSS code used to control Web page style. The <em>W3C</em> Organization provides a tool to check CSS code and is located at: <a href=http://jigsaw.w3.org/css-validator/#validate_by_input>W3C CSS Validation Service</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+        
+</body>
+</html>
