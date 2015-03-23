@@ -1,0 +1,63 @@
+body {
+	padding: 10px 10px;
+	font-family: Helvetica;
+	max-width: 800px;
+	margin: 0 auto; /* The 0 refers to the top and bottom margins and the "auto" automatically */
+	font-size: 1.2em;
+}                 /* sets the left and right margins to equal values. This centers the body on the page.*/
+
+h1 {
+	text-align: center;
+	color: #298AD5;
+	font-size: 26px;
+}
+
+p {
+	margin: 10px 0;
+	font-size: 14px;
+}
+
+ul {
+	list-style-type: none; /* this removes the bullets that show up by default in unordered lists */
+}
+
+li {
+	font-size: 16px; /* 20px */
+	line-height: 32px; /* 44px each line of text should occupy 44 pixels of height (good for mobile usage and fat fingers) */
+}
+
+.lesson {
+	background-color: #085998;
+	border-radius: 10px;
+	color: white;
+	padding: 5px;
+	margin: 20px auto;
+	font-size: 18px;
+}
+
+h2 {
+	margin: 10px;
+	font-size: 22px;
+}
+
+.concept {
+	background-color: #BADEF5;
+	padding: 4px;
+	margin: 5px;
+	border-radius: 4px;
+	color: black;
+}
+
+.concept-title {
+	font-size: 22px; /* 28px*/
+	margin: 8px;
+	text-align: center;
+	color: #D40D4C;
+}
+
+.concept-description {
+	font-weight: lighter;
+	margin: 6px;
+}
+
+
